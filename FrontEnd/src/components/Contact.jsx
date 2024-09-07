@@ -16,11 +16,8 @@ const Contact = () => {
    setLoading(true);
 
    try {
-      const prave = fetch('http://localhost:4000/')
-      console.log(prave)
-      
-      // const pra = fetch('http://localhost:4000/hi',{method:post})
-      console.log('pra')
+      const prave = fetch('https://fitness-pro-backend.onrender.com')
+    
       const { data } = fetch('http://localhost:4000/send/mail', {
          method: 'POST',
          headers: {
